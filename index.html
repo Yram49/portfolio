@@ -1,34 +1,70 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Portfolio Data</title>
-   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Data Analyst</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body class="bg-gray-100">
-   <nav class="bg-white shadow">
-       <div class="max-w-7xl mx-auto px-4">
-           <div class="flex justify-between h-16">
-               <div class="flex">
-                   <span class="flex items-center font-bold text-xl">Portfolio Data</span>
-               </div>
-           </div>
-       </div>
-   </nav>
+    <main class="max-w-7xl mx-auto px-4 py-12">
+        <!-- Profil -->
+        <div class="bg-white rounded-lg shadow-lg p-8 mb-8">
+            <h1 class="text-3xl font-bold mb-4">Expert Data Analyst</h1>
+            <p class="text-xl text-gray-600 mb-6">Spécialisé en Power BI | Carrefour</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <h2 class="text-xl font-bold mb-3">Compétences</h2>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded">Power BI</span>
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded">DAX</span>
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded">Excel avancé</span>
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded">Automatisation</span>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="text-xl font-bold mb-3">Expertise</h2>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li>Création de dashboards interactifs</li>
+                        <li>Automatisation des flux de données</li>
+                        <li>Analyse et visualisation de données</li>
+                        <li>Gestion de projets data</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
-   <main class="max-w-7xl mx-auto mt-10 px-4">
-       <div id="projects" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-           <!-- Projet PowerBI -->
-           <div class="bg-white rounded-lg shadow">
-               <img src="images/powerbi.jpg" alt="PowerBI Dashboard" class="w-full h-48 object-cover rounded-t-lg">
-               <div class="p-6">
-                   <h3 class="font-bold text-xl mb-2">Suivi des Négociations</h3>
-                   <p class="text-gray-600">Dashboard PowerBI pour le suivi des retards et performances des négociateurs Carrefour</p>
-                   <a href="projects/negotiation.html" class="mt-4 inline-block bg-blue-500 text-white px-4 py-2 rounded">Voir détails</a>
-               </div>
-           </div>
-       </div>
-   </main>
+        <!-- Projets -->
+        <h2 class="text-2xl font-bold mb-6">Projets</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="images/powerbi.jpg" alt="Dashboard Négociations" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="font-bold text-xl mb-2">Suivi des Négociations</h3>
+                    <p class="text-gray-600 mb-4">Dashboard PowerBI pour le pilotage des négociations fournisseurs Carrefour</p>
+                    <a href="projects/negotiation.html" class="text-blue-500 font-medium hover:underline">Voir détails →</a>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="images/assistant.jpg" alt="Assistant Financier" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="font-bold text-xl mb-2">Assistant Financier</h3>
+                    <p class="text-gray-600 mb-4">IA pour analyse des relevés bancaires et conseil financier</p>
+                    <a href="projects/assistant.html" class="text-blue-500 font-medium hover:underline">Voir détails →</a>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="images/ml.jpg" alt="Générateur d'Images" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="font-bold text-xl mb-2">Générateur d'Images ML</h3>
+                    <p class="text-gray-600 mb-4">Projet de Machine Learning pour génération d'images</p>
+                    <a href="projects/ml.html" class="text-blue-500 font-medium hover:underline">Voir détails →</a>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
